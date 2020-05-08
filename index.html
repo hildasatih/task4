@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css">
+</head>
+<body>
+        <div class="menu"><i class="fa fa-bars"></i></div>
+    <div class="main-container">
+      <div class="title"><h1>COMPUTER QUIZ</h1></div>
+    
+      <div class="container">
+
+       <div class="totalscore">Score:</div>
+        <div class="quiz-number">
+            <h3>Question <span class="ques-num-value"></span> of <span class="total-que-num"></span></h3>
+        </div>
+        <div class="question"></div>
+        <div class="options">
+               
+            <div class="option1" id="0" onclick="check(this)"></div>
+            <div class="option2" id="1" onclick="check(this)"></div>
+            <div class="option3" id="2" onclick="check(this)"></div>
+            <div class="option4" id="3" onclick="check(this)"></div>
+        </div>
+
+        <div class="button">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+
+        
+    </div>
+
+    <div class="quiz-over">
+        <div class="box">
+        <h1><span class="correct-answers"></span><span class="total-questions"></span><span class="percentage"></span></h1>
+        <button class="refresh" onclick="exit()">Refresh</button>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
